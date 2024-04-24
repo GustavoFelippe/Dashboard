@@ -31,6 +31,8 @@ col1, col2 = st.columns(2)
 # Cria três colunas na interface do Streamlit
 col3, col4, col5 = st.columns(3)
 
+# O use_container_width=True faz com o gráfico se adapte com a largura do navegador
+
 # Cria um gráfico de barras do faturamento por dia, dividido por cidade
 fig_date = px.bar(df_filtered, x="Date", y="Total",color="City", title="Faturamento por dia")
 # Exibe o gráfico na primeira coluna
